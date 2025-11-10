@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-10T23:58:27.734Z",
+  "lastUpdated": "2025-11-10T23:58:58.190Z",
   "items": [
     {
       "title": "Ультрабол Коллекционный набор",
@@ -8,7 +8,7 @@
       "category": "common",
       "status": "active",
       "price": null,
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Ультрабол Коллекционный набор",
@@ -17,16 +17,7 @@
       "category": "epic",
       "status": "active",
       "price": "1980",
-      "createdAt": 1762819013307
-    },
-    {
-      "title": "Покебол Коллекционный набор",
-      "website": "https://www.ozon.ru/product/pokemon-pokebol-podarochnyy-nabor-legendarnyy-prazdnik-pikachu-kitayskaya-versiya-2118763302",
-      "image": "https://ir-8.ozone.ru/s3/multimedia-1-q/wc1000/7691094926.jpg",
-      "category": "epic",
-      "status": "active",
-      "price": "1250",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Стартовый набор карт Покемон",
@@ -35,7 +26,7 @@
       "category": "uncommon",
       "status": "active",
       "price": "350",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Протекторы для карт",
@@ -44,7 +35,7 @@
       "category": "common",
       "status": "active",
       "price": "200",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Ручки \"черепа\" для потенциометров гитары ",
@@ -53,7 +44,7 @@
       "category": "uncommon",
       "status": "active",
       "price": "350",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Головки колков \"черепа\" для гитары",
@@ -62,7 +53,7 @@
       "category": "uncommon",
       "status": "active",
       "price": "280",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Ремень для гитары \"Пауки\"",
@@ -71,7 +62,7 @@
       "category": "uncommon",
       "status": "active",
       "price": "350",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Фигурка BOCCHI THE ROCK",
@@ -80,7 +71,7 @@
       "category": "rare",
       "status": "active",
       "price": "600",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Аудиосистема SAOAIY SH39",
@@ -89,7 +80,7 @@
       "category": "epic",
       "status": "active",
       "price": "3560",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Кожаный гитарный ремень",
@@ -98,7 +89,7 @@
       "category": "epic",
       "status": "active",
       "price": "1750",
-      "createdAt": 1762819013307
+      "createdAt": 1762819122351
     },
     {
       "title": "Подставка для гитары",
@@ -107,6 +98,15 @@
       "category": "uncommon",
       "status": "active",
       "price": "310",
+      "createdAt": 1762819122351
+    },
+    {
+      "title": "Покебол Коллекционный набор",
+      "website": "https://www.ozon.ru/product/pokemon-pokebol-podarochnyy-nabor-legendarnyy-prazdnik-pikachu-kitayskaya-versiya-2118763302",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-q/wc1000/7691094926.jpg",
+      "category": "epic",
+      "status": "active",
+      "price": "1250",
       "createdAt": 1762819013307
     }
   ]

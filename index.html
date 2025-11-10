@@ -548,7 +548,7 @@
     <header>
         <div class="header-left">
             <a href="#" class="logo">
-                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http:
+                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="giftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                             <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:1" />
@@ -626,7 +626,7 @@
                 </div>
                 <div class="form-group">
                     <label for="cardImage" class="form-label">Изображение (URL)</label>
-                    <input type="url" id="cardImage" class="form-input" placeholder="https:
+                    <input type="url" id="cardImage" class="form-input" placeholder="https://example.com/image.jpg">
                     <div class="image-preview" id="imagePreview">
                         <span>Предпросмотр изображения</span>
                     </div>
@@ -688,6 +688,7 @@
             let editingCardIndex = null;
             let currentFilter = 'all';
             let priceModeActive = false;
+            let isModalOpen = false;
 
             let secretClickCount = 0;
             let secretClickTimer = null;
@@ -717,8 +718,26 @@
                 common: 'var(--common-color)'
             };
 
-            function getCategoryByPrice(price, existingCategory) {
+            // Отладочная информация
+            console.log('imagePreview:', imagePreview);
+            console.log('cardModal:', cardModal);
+            console.log('Все элементы загружены');
 
+            // Функция для открытия модального окна
+            function openModal(modal) {
+                isModalOpen = true;
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Функция для закрытия модального окна
+            function closeModal(modal) {
+                isModalOpen = false;
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            function getCategoryByPrice(price, existingCategory) {
                 if (!price || price === '' || price === '0' || !priceModeActive) {
                     return existingCategory || 'common';
                 }
@@ -727,11 +746,6 @@
                 if (isNaN(priceNum) || priceNum <= 0) {
                     return existingCategory || 'common';
                 }
-
-
-
-
-
 
                 if (priceNum > 5000) {
                     return 'legendary';
@@ -772,7 +786,6 @@
                         if (hasPrice) {
                             withPrice.push(card);
                         } else {
-
                             const cardCopy = {...card};
                             cardCopy.originalCategory = cat;
                             cardCopy.originalIndex = cards.findIndex(c => 
@@ -783,12 +796,9 @@
                     });
                     
                     if (cat === 'common') {
-
                         displayCardsByCategory[cat] = [...withPrice, ...withoutPrice];
                     } else {
-
                         displayCardsByCategory[cat] = withPrice;
-
                         withoutPrice.forEach(card => {
                             cardsWithoutPrice.push(card);
                         });
@@ -856,7 +866,6 @@
                     cardsContainer.className = 'cards-container';
                     
                     categoryCards.forEach((card, index) => {
-
                         let originalIndex = -1;
                         if (card.originalIndex !== undefined) {
                             originalIndex = card.originalIndex;
@@ -896,7 +905,11 @@
                     plusIcon.textContent = '+';
                     addCard.appendChild(plusIcon);
                     
-                    addCard.addEventListener('click', function() {
+                    // Исправленный обработчик для кнопки добавления
+                    addCard.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        hideAllMenus();
                         editingCardIndex = null;
                         modalTitle.textContent = 'Добавить карточку';
                         cardForm.reset();
@@ -913,7 +926,7 @@
                         } else {
                             priceGroup.classList.remove('show');
                         }
-                        cardModal.style.display = 'flex';
+                        openModal(cardModal);
                     });
                     
                     addCardContainer.appendChild(addCard);
@@ -964,6 +977,7 @@
                 editOption.addEventListener('click', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
+                    hideAllMenus();
                     openEditModal(index);
                 });
                 
@@ -997,7 +1011,6 @@
                         const rect = menuOptions.getBoundingClientRect();
                         const viewportWidth = window.innerWidth;
                         if (rect.right > viewportWidth) {
-
                             const offset = rect.right - viewportWidth + 10;
                             menuOptions.style.right = 'auto';
                             menuOptions.style.left = `${-offset}px`;
@@ -1076,14 +1089,18 @@
                     imagePreview.innerHTML = '<span>Предпросмотр изображения</span>';
                 }
                 
-                cardModal.style.display = 'flex';
+                setTimeout(() => {
+                    openModal(cardModal);
+                }, 10);
             }
 
             cardImage.addEventListener('input', function() {
                 if (cardImage.value) {
                     updateImagePreview(cardImage.value);
                 } else {
-                    imagePreview.innerHTML = '<span>Предпросмотр изображения</span>';
+                    if (imagePreview) {
+                        imagePreview.innerHTML = '<span>Предпросмотр изображения</span>';
+                    }
                 }
             });
             
@@ -1125,16 +1142,14 @@
                 };
                 
                 if (editingCardIndex !== null) {
-
                     cards[editingCardIndex] = newCard;
                 } else {
-
                     cards.push(newCard);
                 }
                 
                 localStorage.setItem('wListCards', JSON.stringify(cards));
                 loadCards();
-                cardModal.style.display = 'none';
+                closeModal(cardModal);
             });
 
             function deleteCard(index) {
@@ -1146,24 +1161,41 @@
             }
 
             cancelBtn.addEventListener('click', function() {
-                cardModal.style.display = 'none';
+                closeModal(cardModal);
             });
 
             window.addEventListener('click', function(e) {
                 if (e.target === cardModal) {
-                    cardModal.style.display = 'none';
+                    closeModal(cardModal);
+                }
+                if (e.target === passwordModal) {
+                    closeModal(passwordModal);
+                    passwordForm.reset();
                 }
             });
 
             document.addEventListener('click', function(e) {
-                if (!e.target.closest('.card-menu')) {
+                if (isModalOpen) return;
+                
+                if (!e.target.closest('.card-menu') && !e.target.closest('.modal')) {
                     hideAllMenus();
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    if (cardModal.style.display === 'flex') {
+                        closeModal(cardModal);
+                    }
+                    if (passwordModal.style.display === 'flex') {
+                        closeModal(passwordModal);
+                        passwordForm.reset();
+                    }
                 }
             });
 
             hiddenBtn.addEventListener('click', function() {
                 if (priceModeActive) {
-
                     priceModeActive = false;
                     priceGroup.classList.remove('show');
                     publishBtn.style.display = 'none';
@@ -1182,10 +1214,9 @@
 
                     if (secretClickCount >= 3) {
                         secretClickCount = 0;
-                        passwordModal.style.display = 'flex';
+                        openModal(passwordModal);
                         document.getElementById('passwordInput').focus();
                     } else {
-
                         secretClickTimer = setTimeout(function() {
                             secretClickCount = 0;
                             secretClickTimer = null;
@@ -1200,7 +1231,7 @@
                 if (password === '0119') {
                     priceModeActive = true;
                     priceGroup.classList.add('show');
-                    passwordModal.style.display = 'none';
+                    closeModal(passwordModal);
                     passwordForm.reset();
 
                     checkGitHubOwner().then(isOwner => {
@@ -1216,19 +1247,9 @@
             });
             
             document.getElementById('passwordCancelBtn').addEventListener('click', function() {
-                passwordModal.style.display = 'none';
+                closeModal(passwordModal);
                 passwordForm.reset();
             });
-
-            window.addEventListener('click', function(e) {
-                if (e.target === passwordModal) {
-                    passwordModal.style.display = 'none';
-                    passwordForm.reset();
-                }
-            });
-
-
-
 
             async function loadPublishedData() {
                 try {
@@ -1236,7 +1257,6 @@
                     if (response.ok) {
                         const data = await response.json();
                         if (data.items && data.items.length > 0) {
-
                             const githubCards = data.items.map(item => ({
                                 name: item.title || item.name,
                                 url: item.website || item.url,
@@ -1329,7 +1349,6 @@
                     
                     if (updateResponse.ok) {
                         alert('✅ Данные успешно опубликованы на GitHub!');
-
                         await loadPublishedData();
                     } else {
                         const errorData = await updateResponse.json();

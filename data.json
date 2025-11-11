@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2025-11-11T00:37:45.445Z",
+  "lastUpdated": "2025-11-11T11:50:41.470Z",
   "items": [
     {
       "title": "Ультрабол Коллекционный набор",
@@ -378,6 +378,159 @@
       "status": "active",
       "price": "1660",
       "createdAt": 1762821447718
+    },
+    {
+      "title": "Funko POP! Silco",
+      "website": "https://www.ozon.ru/product/figurka-funko-pop-tv-arcane-league-of-legends-silco-1604-75650-1840918075/?_bctx=CAMQgdH9TQ&at=QktJZ4gBPc2MxLEmiZz4J96ik0ZVL9hDo2Xv7fzZQOrj",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-e/wc1000/8090855798.jpg",
+      "category": "epic",
+      "status": "active",
+      "price": "1660",
+      "createdAt": 1762860430921
+    },
+    {
+      "title": "Funko POP! Anakin",
+      "website": "https://www.ozon.ru/product/figurka-funko-pop-bobble-star-wars-anakin-skywalker-dark-side-exc-281-31681-1914570462/?_bctx=CAMQgdH9TQ&at=gpt4Q5KPytZ094GgiZnA6LOF09B2rVhDjw6DBhNAW8l",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-i/wc1000/8086679370.jpg",
+      "category": "epic",
+      "status": "active",
+      "price": "2000",
+      "createdAt": 1762860480625
+    },
+    {
+      "title": "Funko POP! Homelander",
+      "website": "https://www.ozon.ru/product/figurka-funko-pop-tv-the-boys-homelander-levitating-978-48186-figurka-fanko-pop-po-motivam-seriala-1581765957/?_bctx=CAMQgdH9TQ&at=z6tOVNE8qc1jXxVnI1GDY2LH6PB13FPWQn87skY3Vqw",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-x/wc1000/7034945073.jpg",
+      "category": "epic",
+      "status": "active",
+      "price": "1750",
+      "createdAt": 1762860518488
+    },
+    {
+      "title": "Funko POP! Chainsaw Man",
+      "website": "https://www.ozon.ru/product/figurka-funko-pop-animation-chainsaw-man-w-bloody-chase-1677-80324-figurka-fanko-pop-po-motivam-1745257226/?_bctx=CAMQgdH9TQ&at=K8tZpxP8WHyVjDoNC8RkNPYUxYW8Qjt6y0jQ8i7YADlw",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-8/wc1000/7180443116.jpg",
+      "category": "epic",
+      "status": "active",
+      "price": "2420",
+      "createdAt": 1762860545776
+    },
+    {
+      "title": "Funko POP! John Wick",
+      "website": "https://www.ozon.ru/product/figurka-funko-pop-movies-john-wick-3-john-wick-1763-83572-2471999532",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-u/wc1000/7711341042.jpg",
+      "category": "epic",
+      "status": "active",
+      "price": "1620",
+      "createdAt": 1762860591024
+    },
+    {
+      "title": "LED Медиатор ",
+      "website": "https://www.ozon.ru/product/led-mediator-i-kapodastr-dlya-akusticheskoy-gitary-nabor-dlya-gitary-aksessuary-dlya-muzykalnyh-1809813821",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-f/wc1000/6824895603.jpg",
+      "category": "common",
+      "status": "active",
+      "price": "190",
+      "createdAt": 1762860632032
+    },
+    {
+      "title": "Органайзер для медиаторов",
+      "website": "https://www.ozon.ru/product/korobka-organayzer-dlya-gitarnyh-mediatorov-2117477942",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-g/wc1000/7319765356.jpg",
+      "category": "rare",
+      "status": "active",
+      "price": "550",
+      "createdAt": 1762860677136
+    },
+    {
+      "title": "Ready or Not",
+      "website": "https://store.steampowered.com/app/1144200/Ready_or_Not",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1144200/header.jpg?t=1753984272",
+      "category": "epic",
+      "status": "active",
+      "price": "2240",
+      "createdAt": 1762861094984
+    },
+    {
+      "title": "Bodycam",
+      "website": "https://store.steampowered.com/app/2406770/Bodycam",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2406770/bb577b428ed83ff9e3aa1c64844d1561814dffca/header.jpg?t=1750962796",
+      "category": "epic",
+      "status": "active",
+      "price": "1200",
+      "createdAt": 1762861126536
+    },
+    {
+      "title": "Slime Rancher 2",
+      "website": "https://store.steampowered.com/app/1657630/Slime_Rancher_2",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1657630/964d66b03d8695cdcb0c719a67448a99e3c85c82/header_alt_assets_5.jpg?t=1758651475",
+      "category": "epic",
+      "status": "active",
+      "price": "1100",
+      "createdAt": 1762861145616
+    },
+    {
+      "title": "Do No Harm",
+      "website": "https://store.steampowered.com/app/3138780/Do_No_Harm",
+      "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3138780/header.jpg?t=1762448691",
+      "category": "uncommon",
+      "status": "active",
+      "price": "490",
+      "createdAt": 1762861167328
+    },
+    {
+      "title": "Кейкап",
+      "website": "https://www.ozon.ru/product/keykap-dlya-mehanicheskoy-klaviatury-kastomnyy-igrovaya-kost-dice-1935120143",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-o/wc1000/7383395112.jpg",
+      "category": "common",
+      "status": "active",
+      "price": "200",
+      "createdAt": 1762861565960
+    },
+    {
+      "title": "Подвеска \"Пуля\"",
+      "website": "https://www.ozon.ru/product/dekorativnaya-podveska-ozherele-s-podveskoy-pulya-cyberpunk-2077-metallicheskiy-kulon-na-tsepochke-2353409388",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-c/wc1000/7236731568.jpg",
+      "category": "common",
+      "status": "active",
+      "price": "230",
+      "createdAt": 1762861609400
+    },
+    {
+      "title": "Кейкап ",
+      "website": "https://www.ozon.ru/product/keykap-dlya-mehanicheskoy-klaviatury-keycap-knopka-s-risunkom-steam-858464349",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-9/wc1000/6549806481.jpg",
+      "category": "common",
+      "status": "active",
+      "price": "240",
+      "createdAt": 1762861626687
+    },
+    {
+      "title": "Кейкап ",
+      "website": "https://www.ozon.ru/product/keykap-dlya-mehanicheskoy-klaviatury-keycap-knopka-s-risunkom-game-over-1597472309",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-p/wc1000/7047417769.jpg",
+      "category": "common",
+      "status": "active",
+      "price": "240",
+      "createdAt": 1762861646071
+    },
+    {
+      "title": "Кейкап ",
+      "website": "https://www.ozon.ru/product/keykap-dlya-mehanicheskoy-klaviatury-kastomnyy-samurai-kiberpank-1875938534",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-n/wc1000/7331718551.jpg",
+      "category": "common",
+      "status": "active",
+      "price": "240",
+      "createdAt": 1762861662839
+    },
+    {
+      "title": "Магнит Cyberpunk 2077",
+      "website": "https://www.ozon.ru/product/figurka-magnit-cyberpunk-2077-2538101325",
+      "image": "https://ir-8.ozone.ru/s3/multimedia-1-a/wc1000/7736556610.jpg",
+      "category": "uncommon",
+      "status": "active",
+      "price": "390",
+      "createdAt": 1762861790832
     }
   ]
 }

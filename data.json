@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2025-11-11T11:50:41.470Z",
+  "lastUpdated": "2026-01-25T21:03:45.363Z",
   "items": [
     {
       "title": "Ультрабол Коллекционный набор",
       "website": "https://www.ozon.ru/product/pokemon-ultrabol-kollektsionnyy-nabor-art-festivalya-pokemonov-kitayskaya-versiya-2207541117/?at=83tB48wk9HnxWNW1IzVEOKRHXJZ84gu9OLon5TZDLJPV",
       "image": "https://ir-8.ozone.ru/s3/multimedia-1-6/wc1000/7692409446.jpg",
       "category": "epic",
-      "status": "active",
+      "status": "completed",
       "price": "1980",
       "createdAt": 1762819180064
     },
@@ -14,9 +14,9 @@
       "title": "Стартовый набор карт Покемон",
       "website": "https://www.ozon.ru/product/pokemon-startovyy-nabor-kart-pokemon-start-deck-100-cs4dac-kitayskaya-versiya-2402988386",
       "image": "https://ir-8.ozone.ru/s3/multimedia-1-g/wc1000/7711497556.jpg",
-      "category": "uncommon",
+      "category": "epic",
       "status": "active",
-      "price": "350",
+      "price": "1280",
       "createdAt": 1762819180064
     },
     {
@@ -159,8 +159,8 @@
       "website": "https://www.ozon.ru/product/rl-black-kombousilitel-dlya-gitary-6-vt-s-bluetooth-portativnyy-dlya-doma-i-repetitsiy-s-2511284495",
       "image": "https://ir-8.ozone.ru/s3/multimedia-1-z/wc1000/7650844739.jpg",
       "category": "epic",
-      "status": "active",
-      "price": "5000",
+      "status": "completed",
+      "price": null,
       "createdAt": 1762819678639
     },
     {
@@ -366,7 +366,7 @@
       "website": "https://www.ozon.ru/product/figurka-funko-pop-tv-arcane-league-of-legends-jinx-1602-75649-1840917911/?_bctx=CAMQgdH9TQ&at=OgtEQrl5xhNAxVo0IBO55DfAgqwkEuv2M9RDiDjW66",
       "image": "https://ir-8.ozone.ru/s3/multimedia-1-g/wc1000/8090867104.jpg",
       "category": "epic",
-      "status": "active",
+      "status": "completed",
       "price": "1660",
       "createdAt": 1762821420630
     },
@@ -438,7 +438,7 @@
       "website": "https://www.ozon.ru/product/korobka-organayzer-dlya-gitarnyh-mediatorov-2117477942",
       "image": "https://ir-8.ozone.ru/s3/multimedia-1-g/wc1000/7319765356.jpg",
       "category": "rare",
-      "status": "active",
+      "status": "completed",
       "price": "550",
       "createdAt": 1762860677136
     },
@@ -465,7 +465,7 @@
       "website": "https://store.steampowered.com/app/1657630/Slime_Rancher_2",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1657630/964d66b03d8695cdcb0c719a67448a99e3c85c82/header_alt_assets_5.jpg?t=1758651475",
       "category": "epic",
-      "status": "active",
+      "status": "completed",
       "price": "1100",
       "createdAt": 1762861145616
     },
@@ -474,7 +474,7 @@
       "website": "https://store.steampowered.com/app/3138780/Do_No_Harm",
       "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3138780/header.jpg?t=1762448691",
       "category": "uncommon",
-      "status": "active",
+      "status": "completed",
       "price": "490",
       "createdAt": 1762861167328
     },
